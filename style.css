@@ -5,6 +5,51 @@
   box-sizing: border-box;
 }
 
+.loading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.loading-text {
+  color: #00ffcc;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: blink 1.5s infinite;
+}
+
+.loading-bar {
+  width: 200px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 5px #00ffcc66;
+}
+
+.loading-fill {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, #00ffcc, #00ffaa);
+  animation: slide 1.5s infinite ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 #loading-screen {
   position: fixed;
   top: 0;
