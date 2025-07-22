@@ -36,8 +36,10 @@
     
     <script>
       window.addEventListener("load", () => {
-        document.getElementById("loading-screen").style.display = "none";
-        document.querySelector(".container").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("loading-screen").style.display = "none";
+          document.querySelector(".container").style.display = "block";
+        }, 2000); // 최소 2초 대기 후 본문 표시
       });
     </script>
   </body>
