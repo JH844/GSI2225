@@ -8,9 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="loading-screen">
-      <div class="loader">GSI LOADING...</div>
+  <div id="loading-screen">
+    <div class="loading-box">
+      <div class="loading-text">GSI LOADING...</div>
+      <div class="loading-bar">
+        <div class="loading-fill"></div>
+      </div>
     </div>
+  </div>
   
     <div class="container" style="display: none;">
       <div class="logo">Global Secret Intelligence<span class="neon-dot"></span></div>
@@ -28,7 +33,8 @@
         © 2225 GSI Confidential Records. All Rights Reserved.
       </div>
     </div>
-      <script>
+    
+    <script>
       window.addEventListener("load", () => {
         document.getElementById("loading-screen").style.display = "none";
         document.querySelector(".container").style.display = "block";
