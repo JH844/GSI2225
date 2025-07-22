@@ -13,7 +13,7 @@
 }
 
 .loading-text {
-  color: #00ffcc;
+  color: #ddb25c;
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: bold;
@@ -27,13 +27,13 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 0 5px #00ffcc66;
+  box-shadow: 0 0 5px #a86a2f;
 }
 
 .loading-fill {
   width: 50%;
   height: 100%;
-  background: linear-gradient(90deg, #00ffcc, #00ffaa);
+  background: linear-gradient(90deg, #ddb25c, #ddb25c);
   animation: slide 1.5s infinite ease-in-out;
   border-radius: 10px;
 }
